@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ # 配置注册中心url
+spring:
+  application:
+      name: service0 # 根据该值,去config-center中查找service0.yml
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-center # 配置中心的spring.application.name
+      fail-fast: true # 如果连接配置中心出错,则中断程序
+      username: test
+      password: test

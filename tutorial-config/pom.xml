@@ -5,13 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>personal.leo.tutorial</groupId>
-    <artifactId>spring-cloud</artifactId>
+    <artifactId>tutorial-config</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>tutorial-sleuth</module>
-        <module>tutorial-config</module>
+        <module>tutorial-config-configcenter</module>
+        <module>tutorial-config-service0</module>
+        <module>tutorial-config-registry</module>
     </modules>
 
 

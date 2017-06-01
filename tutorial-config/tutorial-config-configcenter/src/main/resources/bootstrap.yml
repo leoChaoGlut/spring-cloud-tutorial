@@ -1,0 +1,25 @@
+server:
+  port: 9999
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: classpath:/config
+  application:
+    name: config-center
+  profiles:
+    active: native #测试环境下,不使用git管理配置文件
+eureka:
+  instance:
+    instance-id: ${eureka.instance.hostname}:${server.port}
+    lease-renewal-interval-in-seconds: 2 #契约更新间隔
+    lease-expiration-duration-in-seconds: 4 #契约过期时间
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+security: #加密配置
+  user:
+    name: test
+    password: test
