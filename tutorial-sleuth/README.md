@@ -1,7 +1,4 @@
 # spring-cloud-sleuth-tutorial
-# 环境
-- jdk1.8
-- 默认所有服务都启动在 localhost
 # 启动步骤
 - [安装zipkin](http://zipkin.io/pages/quickstart.html)
 - 启动 personal.leo.tutorial.sleuth.registry.RegistryApp
