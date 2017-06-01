@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: service1 #sleuth 需要这个属性,并且要配置在bootstrap中

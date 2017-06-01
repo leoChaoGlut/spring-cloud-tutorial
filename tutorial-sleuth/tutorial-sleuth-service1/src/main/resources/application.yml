@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    instance-id: ${eureka.instance.hostname}:${server.port}
+    lease-renewal-interval-in-seconds: 2 #契约更新间隔
+    lease-expiration-duration-in-seconds: 4 #契约过期时间
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 10002
+spring:
+  zipkin:
+    base-url: http://192.168.1.159:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0 #sleuth 采样率, 1.0代表所有的span都会被采集到zipkin中. 0.0则代表所有的span都不会被采集到zipkin中.
