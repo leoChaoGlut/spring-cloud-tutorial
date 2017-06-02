@@ -8,10 +8,12 @@
     <artifactId>tutorial-bus</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>tutorial-bus-registry</module>
-        <module>tutorial-bus-service0</module>
         <module>tutorial-bus-configcenter</module>
+        <module>tutorial-bus-service0</module>
+        <module>tutorial-bus-service1</module>
     </modules>
 
 </project>

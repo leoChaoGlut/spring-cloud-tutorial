@@ -5,7 +5,7 @@ eureka:
     lease-expiration-duration-in-seconds: 4 #契约过期时间
     hostname: localhost
 server:
-  port: 10001
+  port: 10002
 spring:
   cloud:
     stream:
@@ -16,4 +16,4 @@ spring:
 management:
   security:
     enabled: false
-tips: 11
+tips: 22

@@ -4,8 +4,8 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: classpath:/config #配置文件根目录
+        native:
+          search-locations: file:///D:/gitRepo/gitHub/spring-cloud-tutorial/tutorial-config/tutorial-config-configcenter/src/main/resources/config #配置文件根目录
   application:
     name: config-center
   profiles:
