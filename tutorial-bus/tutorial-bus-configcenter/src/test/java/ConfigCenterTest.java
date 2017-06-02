@@ -16,6 +16,8 @@ public class ConfigCenterTest {
 
     @Test
     public void refreshTest() throws IOException {
+//        destination用于控制哪些服务应该接受kafka消息,如果没有该参数,则所有服务都要进行刷新配置操作
+//        tutorial中提供了2个service,分别为service0,service1,测试的时候,可以更改destination的值来决定,哪一个服务需要更新配置.
         String url = "http://localhost:9999/bus/refresh?destination=service0:**";
         String respBodyStr = post(url, "");
         System.out.println(respBodyStr);
