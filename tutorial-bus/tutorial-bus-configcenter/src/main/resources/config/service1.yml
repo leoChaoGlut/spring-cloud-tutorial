@@ -11,9 +11,12 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: 192.168.1.159:9000,192.168.1.159:9001,192.168.1.159:9002
+          brokers:
+            - 192.168.1.159:9000
+            - 192.168.1.159:9001
+            - 192.168.1.159:9002
           zkNodes: 192.168.1.159:2181
 management:
   security:
     enabled: false
-tips: 22
+tips: 2
