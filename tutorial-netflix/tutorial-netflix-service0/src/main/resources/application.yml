@@ -14,10 +14,12 @@ spring:
     name: service0
 service1: # 被调用的服务名
   ribbon: # 具体配置请看:https://github.com/Netflix/ribbon/wiki/Getting-Started  默认配置请看: com.netflix.client.config.DefaultClientConfigImpl
-    ReadTimeout: 2000
-    ConnectTimeout: 2000
+    ReadTimeout: 5000
+    ConnectTimeout: 5000
     MaxAutoRetries: 0
     MaxAutoRetriesNextServer: 1
+ribbon:
+  ServerListRefreshInterval: 100000
 feign:
   hystrix:
     enabled: true
@@ -27,3 +29,4 @@ hystrix: #具体配置请看:https://github.com/Netflix/Hystrix/wiki/Configurati
       execution.isolation.thread.timeoutInMilliseconds: 3000
     Service1Client#tips(int): #方法级别控制.  HystrixCommandKey 的 pattern,请看 feign.Feign.configKey(Class,Method)
       execution.isolation.thread.timeoutInMilliseconds: 4000
+      #类级别控制请看 personal.leo.tutorial.netflix.service0.client.config.Service1ClientConfig
