@@ -9,6 +9,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 1
 spring:
   application:
     name: service0
@@ -19,7 +20,8 @@ service1: # 被调用的服务名
     MaxAutoRetries: 0
     MaxAutoRetriesNextServer: 1
 ribbon:
-  ServerListRefreshInterval: 100000
+  ServerListRefreshInterval: 1000
+  NFLoadBalancerPingInterval: 10 #
 feign:
   hystrix:
     enabled: true
