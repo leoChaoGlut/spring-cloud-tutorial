@@ -2,8 +2,8 @@ spring:
   cloud:
     stream:
       bindings:
-        output:
-          destination: mydest
+        subscribe: # @See personal.leo.tutorial.stream.consumer0.channel.LogSubscribeChannel.SUBSCRIBE
+          destination: topic-log
       kafka:
         binder:
           brokers:

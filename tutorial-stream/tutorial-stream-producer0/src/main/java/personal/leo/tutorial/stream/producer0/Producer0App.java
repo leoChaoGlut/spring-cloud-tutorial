@@ -1,10 +1,9 @@
-package personal.leo.tutorial.stream.sinkservice;
+package personal.leo.tutorial.stream.producer0;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import personal.leo.tutorial.stream.sinkservice.channel.LogChannel;
+import personal.leo.tutorial.stream.producer0.channel.LogPublishChannel;
 
 /**
  * @Author: Leo
@@ -13,9 +12,8 @@ import personal.leo.tutorial.stream.sinkservice.channel.LogChannel;
  * @Description:
  */
 @EnableBinding({
-        LogChannel.class
+        LogPublishChannel.class
 })
-@EnableWebMvc
 @SpringBootApplication
 public class Producer0App {
     public static void main(String[] args) {

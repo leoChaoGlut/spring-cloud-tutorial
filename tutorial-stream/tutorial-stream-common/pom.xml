@@ -4,16 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>personal.leo.tutorial</groupId>
-    <artifactId>tutorial-stream</artifactId>
-    <packaging>pom</packaging>
+    <groupId>personal.leo.tutorial.stream</groupId>
+    <artifactId>tutorial-stream-common</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
-    <modules>
-        <module>tutorial-stream-consumer0</module>
-        <module>tutorial-stream-producer0</module>
-        <module>tutorial-stream-common</module>
-    </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -2,8 +2,8 @@ spring:
   cloud:
     stream:
       bindings:
-        publish:
-          destination: log
+        publish: # @See personal.leo.tutorial.stream.producer0.channel.LogPublishChannel.PUBLISH
+          destination: topic-log
       kafka:
         binder:
           brokers:
