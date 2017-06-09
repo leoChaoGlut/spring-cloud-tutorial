@@ -5,7 +5,7 @@ spring:
         publish: # @See personal.leo.tutorial.stream.producer0.channel.LogPublishChannel.PUBLISH
           destination: topic-log
       kafka:
-        binder:
+        binder: #指定kafka broker和zookeeper nodes
           brokers:
             - 192.168.1.90:9000
             - 192.168.1.90:9001
