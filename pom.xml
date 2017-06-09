@@ -21,6 +21,7 @@
         <module>tutorial-config</module>
         <module>tutorial-bus</module>
         <module>tutorial-netflix</module>
+        <module>tutorial-stream</module>
     </modules>
 
 </project>

@@ -10,7 +10,7 @@ spring:
       kafka:
         binder:
           brokers: 192.168.1.159:9000,192.168.1.159:9001,192.168.1.159:9002
-          zkNodes: 192.168.1.159:2181
+          zkNodes: 192.168.1.90:2181
 server:
   port: 9999
 security: #加密配置

@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: mydest
+      kafka:
+        binder:
+          brokers:
+            - 192.168.1.90:9000
+            - 192.168.1.90:9001
+            - 192.168.1.90:9002
+          zkNodes: 192.168.1.90:2181
+server:
+  port: 10002
