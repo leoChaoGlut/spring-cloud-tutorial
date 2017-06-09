@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>personal.leo.tutorial.stream</groupId>
-    <artifactId>tutorial-stream-sinkservice</artifactId>
+    <artifactId>tutorial-stream-producer0</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
