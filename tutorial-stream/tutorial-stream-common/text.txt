@@ -6,8 +6,8 @@ Notebook: 为满足用户数据开发、数据探索场景提供的交互式开�
 
 DataLeap 数据开发即大数据开发 IDE，集批流开发为一体，为开发者提供高效、智能的开发环境。支持快速创建开发任务、进行代码开发、运行查询等。主要模块包含数据开发、临时查询、数据库、资源库、函数库、回收站。
 
-Dataleap支持的引擎如下
-1、E-MapReduce（EMR）：火山引擎 E-MapReduce 支持构建开源 Hadoop 生态的企业级大数据分析系统，完全兼容开源，提供 Hadoop、Spark、Hive、Flink、StarRocks、Doris 等大数据生态组件的 集成和管理，帮助用户轻松完成企业大数据平台的构建，降低运维门槛，快速形成大数据分析能力。
-2、LAS ：LakeHouse Analytics Service，是 Serverless 湖仓一体分析服务 ，提供多模引擎，完全兼容开源 Spark、Presto、Hudi 生态，具备弹性计算、海量存储、数据实时更新、统一 SQL、批流合一优势，与大数据开发治理套件对接，支持数据仓库/集市/数据湖分析能力，帮助企业构建云原生实时湖仓分析平台。
-3、流式计算 Flink 版： 火山引擎流式计算 Flink 版是一个 100% 兼容 Apache Flink 的全托管流式计算平台，集成了企业级超大规模作业实践，拥有开箱即用、免运维、Serverless 极致弹性、极简 SQL 开发、低 TCO、高 SLA 保障等特性，助力企业向实时化、云原生化飞速转型。
-4、ByteHouse 企业版（ByteHouse CE）：ByteHouse 是火山引擎基于开源 ClickHouse 进行了深度优化和改造的版本，提供海量数据上更强的查询服务和数据写入性能，应用包括海量数据多维分析、机器学习模型评估、微服务监控和统计等。
+<div>Dataleap支持的引擎如下</div>
+<p>1、E-MapReduce（EMR）：火山引擎 E-MapReduce 支持构建开源 Hadoop 生态的企业级大数据分析系统，完全兼容开源，提供 Hadoop、Spark、Hive、Flink、StarRocks、Doris 等大数据生态组件的 集成和管理，帮助用户轻松完成企业大数据平台的构建，降低运维门槛，快速形成大数据分析能力。</p>
+<p>2、LAS ：LakeHouse Analytics Service，是 Serverless 湖仓一体分析服务 ，提供多模引擎，完全兼容开源 Spark、Presto、Hudi 生态，具备弹性计算、海量存储、数据实时更新、统一 SQL、批流合一优势，与大数据开发治理套件对接，支持数据仓库/集市/数据湖分析能力，帮助企业构建云原生实时湖仓分析平台。</p>
+<p>3、流式计算 Flink 版： 火山引擎流式计算 Flink 版是一个 100% 兼容 Apache Flink 的全托管流式计算平台，集成了企业级超大规模作业实践，拥有开箱即用、免运维、Serverless 极致弹性、极简 SQL 开发、低 TCO、高 SLA 保障等特性，助力企业向实时化、云原生化飞速转型。</p>
+<p>4、ByteHouse 企业版（ByteHouse CE）：ByteHouse 是火山引擎基于开源 ClickHouse 进行了深度优化和改造的版本，提供海量数据上更强的查询服务和数据写入性能，应用包括海量数据多维分析、机器学习模型评估、微服务监控和统计等。</p>
